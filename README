@@ -23,3 +23,6 @@ not available
 
 Windows-DLL:
 http://tukaani.org/xz/xz-5.0.3-windows.zip
+
+To create a Windows import library for DMD, use the command:
+implib /system liblzma.lib liblzma.dll
