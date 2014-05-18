@@ -1,0 +1,28 @@
+{
+	"name": "liblzma",
+	"description": "Bindings for XZ Utils, a free general-purpose data compression software with high compression ratio. liblzma is a compression library with API similar to that of zlib.",
+	"license": "public domain",
+	"homepage": "http://tukaani.org/xz/",
+	"libs-posix": ["lzma"],
+	"sourcePaths": ["deimos"],
+	"dependencies" : {
+	},
+	"configurations": [
+		{
+			"name": "library",
+			"targetType": "sourceLibrary"
+		},
+		{
+			"name": "example-pipe-comp",
+			"targetType": "executable",
+			"targetName": "xz_pipe_comp",
+			"sourceFiles": ["examples/xz_pipe_comp.d"]
+		},
+		{
+			"name": "example-pipe-decomp",
+			"targetType": "executable",
+			"targetName": "xz_pipe_decomp",
+			"sourceFiles": ["examples/xz_pipe_decomp.d"]
+		}
+	]
+}
